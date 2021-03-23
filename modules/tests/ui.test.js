@@ -75,7 +75,7 @@ test('search existing item in UI', () => {
 });
 
 test('search not existing item in UI', () => {
-    expect(testUI.search('booklet').toEqual(false));
+    expect(testUI.search('booklet').toBe(false));
 });
 
 test('search existing item in fake UI', () => {
@@ -83,13 +83,13 @@ test('search existing item in fake UI', () => {
 });
 
 test('search not existing item in fake UI', () => {
-    expect(testUI.search('booklet').toEqual(false));
+    expect(testUI.search('booklet').toBe(false));
 });
 
 // test filterbyPrice
 
 test ('wrong price range', () => {
-    expect(testUI.filterbyPrice(10,0).toEqual(false));
+    expect(testUI.filterbyPrice(10,0).toBe(false));
 });
 
 test ('zero items correspond to filter', () => {
