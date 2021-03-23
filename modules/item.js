@@ -17,6 +17,18 @@ class Item {
         }
         return false;
     }
+    makeDiscount(percent) {
+        this.price -= (this.price * (percent / 100));
+        return this.price;
+    }
+    calcDelivery() {
+        let value = (this.price * 0.02 + this.weight * 10);
+        return value;
+    }
+    changeName(name) {
+        this.name = name;
+        return this.name;
+    }
 }
 
 module.exports = Item;
