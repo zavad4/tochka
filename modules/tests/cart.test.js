@@ -1,5 +1,5 @@
-const Cart = require('./cart');
-const Item = require('./item');
+const Cart = require('../cart');
+const Item = require('../item');
 
 const testCart = new Cart();
 const fakeBook = {
