@@ -21,6 +21,15 @@ const penWithNum2 = new Item('qwerty456', 'pen', 5, 0.05, 1000);
 penWithNum2.num = 2;
 const laptop = new Item('zxcvbn789', 'laptop', 25000, 1.4, 40);
 
+const wrongItem = {
+    one: 1,
+    two: 2,
+};
+
+test('Adds empty item to cart', () => { //isnt
+    expect(testCart.addItem(wrongItem)).toBe(false);
+});
+
 test('Adds pen to cart', () => {
     expect(testCart.addItem(pen)).toEqual([pen]);
 });
