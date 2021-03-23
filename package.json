@@ -1,0 +1,25 @@
+{
+  "name": "tochka",
+  "version": "1.0.0",
+  "description": "Team members\r 1. Zavodovska Elizavieta\r 2. Zegelman Mark\r 3. Marchenko Maksym\r 4. Rozhytskyi Maksym",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zavad4/tochka.git"
+  },
+  "author": "@tochka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zavad4/tochka/issues"
+  },
+  "homepage": "https://github.com/zavad4/tochka#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

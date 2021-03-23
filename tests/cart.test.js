@@ -56,6 +56,7 @@ test('Clears cart', () => {
 test('Adds fake object with name and price to cart (test doubles used)', () => {
     expect(testCart.addItem(fakeBook)).toEqual([fakeBook]);
 });
+
 test('Adds fake object without name to cart (test doubles used)', () => {
     expect(testCart.addItem(fakeItem)).toBe(false);
 });
