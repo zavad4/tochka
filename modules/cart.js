@@ -19,6 +19,20 @@ class Cart {
         }
         return false;
     }
+    deleteItem(item_id) { 
+        this.items = this.items.filter(item => item.id != item_id);
+        return this.items;
+    }
+    getFullСost() {
+        const prices = this.items.map( x => x.price * x.num);
+        const res = prices.reduce((a, b) => a + b);
+        if(res) return res;
+        return false;
+    }
+    clear () {
+        this.items = [];
+        return this.items;
+    }
 }
 
 module.exports = Cart; 
