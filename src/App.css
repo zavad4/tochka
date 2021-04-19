@@ -1,0 +1,148 @@
+:root{
+  --mainBlue : #2a2472;
+  --lightBlue : #069ffd;
+  --mainWhite : #f3f3f3;
+  --mainDark : #232528;
+  --mainYellow : #ffa400;
+}
+
+body{
+  font-family: "oswald",sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title{
+  font-family: 'permanent marker',cursive;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.text-blue{
+  color: var(--mainBlue);
+  
+}
+
+.center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-color{
+  color: greenyellow;
+}
+.navi-item{
+  text-decoration: none;
+  letter-spacing: 1px;
+  color:white;
+
+}
+
+
+.card{
+  border-color: transparent;
+  transition: all 0.6s linear;
+  background-color: rgb(226, 226, 226);
+}
+
+.card-footer{
+  background: transparent;
+  border-top:transparent;
+  transition: all 0.6s linear;
+}
+.card:hover{
+  border: 0.04rem solid rgb(0, 0,0,0.2);
+  box-shadow: 2px 2px 5px rgb(0, 0,0,0.2);
+}
+.card-footer:hover{
+  background: rgb(247,247,247);
+}
+
+.img-container{
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container:hover .card-img-top{
+  transform: scale(1.2);
+}
+.card-img-top{
+  transition: all 0.6s linear;
+}
+
+.cart-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding : 0.2rem 0.4rem;
+  background-color: var(--lightBlue);
+  border: none;
+  color: darkblue;
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0 ;
+  /* transform:translate(-100%,-100%);
+  transition: all 1s linear; */
+}
+
+.cart-btn:hover{
+  color:var(--mainBlue);
+  cursor: pointer;
+}
+
+.img-container:hover{
+  transform: translate(0,0);
+}
+
+#modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-item{
+  background: var(--mainWhite)!important;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem!important;
+  color: var(--mainDark);
+  border-radius: 0.1rem solid black !important;
+  border: 0.1rem solid black;
+}
+.btn-black:hover{
+  background-color: black;
+  color: white;
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+.btn-instagram{
+  color: white;
+  background-color: rgb(255, 159, 175);
+}
+.link-style{
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  cursor: pointer;
+}
+.ft{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-social-icon{
+  border-radius: 5px;
+  
+}
