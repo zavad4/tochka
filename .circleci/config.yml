@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Run tests
           command: npm test
-  build-docker-image:  
+  build-docker-image:    
       - checkout
       - setup_remote_docker:
           version: 19.03.13
