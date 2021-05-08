@@ -40,10 +40,10 @@ jobs:
       #    version: 19.03.13
        #   docker_layer_caching: true
       # build and push Docker image
-      - run: echo $DOCKER_PASS | docker login https://docker.pkg.github.com/ -u kertnique --password-stdin
-    #      docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
-          
-     #     docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
+      - run: 
+          docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
+          echo $DOCKER_PASS | docker login https://docker.pkg.github.com/ -u kertnique --password-stdin
+          docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
 workflows:
   sample: 
     jobs:
