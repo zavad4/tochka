@@ -33,7 +33,9 @@ jobs:
           command: npm test
   build-docker-image:
     docker:
-      - image: cimg/node:15.1  
+      - image: cimg/node:15.1
+    machine: # executor type
+      image: ubuntu-2004:202010-01
     steps:
       - checkout
       - setup_remote_docker:
