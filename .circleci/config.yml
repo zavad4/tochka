@@ -33,7 +33,7 @@ jobs:
           command: npm test
   build-docker-image:
     docker:
-      - image: cimg/node:15.1
+      - image: cimg/base:stable-18.04
     steps:
       - checkout
       - setup_remote_docker:
