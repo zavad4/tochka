@@ -32,8 +32,6 @@ jobs:
           name: Run tests
           command: npm test
   build-docker-image:
-    docker:
-      - image: cimg/node:15.1
     machine: # executor type
       image: ubuntu-2004:202010-01
     steps:
