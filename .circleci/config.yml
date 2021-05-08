@@ -40,7 +40,7 @@ jobs:
       #    version: 19.03.13
        #   docker_layer_caching: true
       # build and push Docker image
-      - run: 
+      - run: |
           docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
           echo $DOCKER_PASS | docker login https://docker.pkg.github.com/ -u kertnique --password-stdin
           docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
