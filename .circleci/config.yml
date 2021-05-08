@@ -42,7 +42,7 @@ jobs:
       # build and push Docker image
       - run: |
           docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
-          echo $DOCKER_PASS | docker login https://docker.pkg.github.com/ -u kertnique --password-stdin
+          echo $DOCKER_PASS | docker login https://docker.pkg.github.com/ -u $GITHUB_USER --password-stdin
           docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
 workflows:
   sample: 
