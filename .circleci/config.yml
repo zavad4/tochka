@@ -45,4 +45,4 @@ workflows:
   sample: 
     jobs:
       - build-and-test
-      - build-docker-image
+    #  - build-docker-image
