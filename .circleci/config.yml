@@ -31,16 +31,17 @@ jobs:
       - run:
           name: Run tests
           command: npm test
- # build-docker-image:    
- #     - checkout
-  #    - setup_remote_docker:
-   #       version: 19.03.13
-    #      docker_layer_caching: true
+  build-docker-image:
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 19.03.13
+          docker_layer_caching: true
       # build and push Docker image
-     # - run: |
-      #    docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
-       #   echo $DOCKER_PASS | docker login -u $GITHUB_USER --password-stdin
-        #  docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
+      - run: |
+          docker build -t docker.pkg.github.com/zavad4/tochka/tochka:latest .
+          echo $DOCKER_PASS | docker login -u $GITHUB_USER --password-stdin
+          docker push docker.pkg.github.com/zavad4/tochka/tochka:latest
 workflows:
   sample: 
     jobs:
