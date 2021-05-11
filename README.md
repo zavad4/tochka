@@ -4,3 +4,4 @@ Team members
 2. Zegelman Mark
 3. Marchenko Maksym
 4. Rozhytskyi Maksym
+Test - checking CI
